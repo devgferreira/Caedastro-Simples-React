@@ -1,8 +1,5 @@
-interface TituloProps{
-    children: string
-}
 
-export default function Titulo(props: TituloProps){
+export default function Titulo(props : any){
     return(
         <div className={`
             flex flex-col justify-center
@@ -12,7 +9,7 @@ export default function Titulo(props: TituloProps){
             `}>
                 {props.children}
             </h1>
-            <hr className="border-2 border-purple-500"/>
+            <hr className="border-2 border-purple-500" />
         </div>
     )
 }
